@@ -1,5 +1,5 @@
 install: make get-deps
+sudo: required
 language: c
 compiler: gcc
-./configure && make && make test
-script: scons
+script: make clean && make && make test
